@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <!-- Definition of arguments -->
+    <arg name="turtle_init" value="false"/>
+    <arg name="rviz_init"   value="true"/>
+    <arg name="group_init"   default="true"/>
+    
+    <!-- This command init turtlesim -->
+    <node 
+        if="$(arg turtle_init)"
+        pkg="turtlesim" 
+        type="turtlesim_node" 
+        name="tortugita" 
+    />
+
+    <node 
+        unless="$(arg rviz_init)"
+        pkg="rviz" 
+        type="rviz" 
+        name="visualizer" 
+    />
+
+    <group if="$(arg group_init)">
+        <node 
+            pkg="turtlesim" 
+            type="turtlesim_node" 
+            name="turtle_group" 
+        />
+
+        <node 
+            pkg="rviz" 
+            type="rviz" 
+            name="viz_group" 
+        />
+    </group>
+
+</launch>
