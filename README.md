@@ -18,5 +18,5 @@ $a^2 = b^2 + c^2$
 
 %a^2 = b^2 + c^2%
 
-Edit by Julio Cardenas
+# Edit by Julio Cardenas
 
