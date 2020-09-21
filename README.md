@@ -17,3 +17,6 @@ This is the test repository for the class RyCSV.
 $a^2 = b^2 + c^2$
 
 %a^2 = b^2 + c^2%
+
+
+# Change made by seccortessa, RyCSV 2020-2
